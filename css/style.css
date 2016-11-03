@@ -1,0 +1,58 @@
+/*reset import*/
+@import url(reset.css);
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@font-face {
+	font-family: fghr;
+	src: url('FGHR.ttf');
+}
+
+html{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 2.92vw;
+	width:100%;
+}
+
+h1 {
+	font-size: 4.78rem;
+	font-family: 'fghr';
+	text-transform: uppercase;
+}
+
+p, li {
+	font-size: 2rem;
+}
+
+/* Color classes */
+.black {
+	color: rgb(44, 45, 45);
+}
+
+.blue {
+	color: rgb(108, 156, 228);
+}
+
+.grey {
+	color: rgb(192, 192, 194);
+}
+
+/* Site Background*/
+body {
+	background:url(../images/wzorek.png) rgb(236, 237, 237)  repeat;
+}
+
+/* list icons */
+#listProjects{
+	list-style-image: url('../images/arrow.gif');
+	list-style-position: outside;
+	padding-left: 14px;
+	/*background: url('../images/arrow.gif') no-repeat;
+	background-position:left center ;
+	padding-left: 14px;
+	background-size: 2%;*/
+}
+/* responisve image*/
+img{
+	max-width: 100%;
+}
