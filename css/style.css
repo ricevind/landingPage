@@ -10,7 +10,7 @@
 
 html{
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 2.92vw;
+	font-size: 2.92vw; /*Adjusted to set 14px font on 480px width screen*/
 	width:100%;
 }
 
@@ -41,7 +41,40 @@ p, li {
 body {
 	background:url(../images/wzorek.png) rgb(236, 237, 237)  repeat;
 }
+/*nav styling*/
+nav {
+	margin-top:3.57rem;
+}
+nav ul {
+	display:flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+.navLink {
+	display: block;
+	background:url(../images/menuCover.png) no-repeat center;
+	background-size: contain;
+	vertical-align: middle;
+}
+nav li a {
+	color:white;
+	text-decoration: none;
+	display: flex;
+	height:5rem;
+	width:5rem;
+	align-items: center;
+}
+nav li a p {
+	font-size: 1rem;
+	width:100%;
+	text-align: center;
+	text-transform: uppercase;
+}
 
+nav .active {
+	background:url(../images/menuCover1.png) no-repeat center;
+	background-size: contain;
+}
 /* list icons */
 #Projects {
 	list-style-image: url('../images/arrow.gif');
