@@ -5,23 +5,24 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @font-face {
 	font-family: fghr;
-	src: url('FGHR.ttf');
+	src        : url('FGHR.ttf');
 }
 
 html{
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 2.92vw; /*Adjusted to set 14px font on 480px width screen*/
-	width:100%;
+	font-size  : 2.92vw; /*Adjusted to set 14px font on 480px width screen*/
+	width      : 100%;
 }
 
 h1 {
-	font-size: 4.78rem;
-	font-family: 'fghr';
+	font-family   : 'fghr';
+	font-size     : 4.78rem;
 	text-transform: uppercase;
 }
 
 p, li {
-	font-size: 2rem;
+	font-size  : 1rem;
+	line-height: 1.1rem;
 }
 
 /* Color classes */
@@ -37,50 +38,53 @@ p, li {
 	color: rgb(192, 192, 194);
 }
 
-/* Site Background*/
-body {
-	background:url(../images/wzorek.png) rgb(236, 237, 237)  repeat;
-}
-/*nav styling*/
-nav {
-	margin-top:3.57rem;
-}
-nav ul {
-	display:flex;
-	justify-content: center;
-	flex-wrap: nowrap;
-}
-.navLink {
-	display: block;
-	background:url(../images/menuCover.png) no-repeat center;
-	background-size: contain;
-	vertical-align: middle;
-}
-nav li a {
-	color:white;
-	text-decoration: none;
-	display: flex;
-	height:5rem;
-	width:5rem;
-	align-items: center;
-}
-nav li a p {
-	font-size: 1rem;
-	width:96%;
-	text-align: center;
+.uppercase {
 	text-transform: uppercase;
 }
 
+/* Site Background*/
+body {
+	background: url(../images/wzorek.png) rgb(236, 237, 237)  repeat;
+}
+/*nav styling*/
+
+
+nav ul {
+	display        : flex;
+	flex-wrap      : nowrap;
+	justify-content: center;
+}
+.navLink {
+	background     : url(../images/menuCover.png) no-repeat center;
+	background-size: contain;
+	display        : block;
+	vertical-align : middle;
+}
+nav li a {
+	align-items    : center;
+	color          : white;
+	display        : flex;
+	height         : 5rem;
+	text-decoration: none;
+	width          : 5rem;
+}
+nav li a p {
+	font-size     : 1rem;
+	text-align    : center;
+	text-transform: uppercase;
+	width         : 96%;
+}
+
 nav .active {
-	background:url(../images/menuCover1.png) no-repeat center;
+	background     : url(../images/menuCover1.png) no-repeat center;
 	background-size: contain;
 }
 /* list icons */
-#Projects {
-	list-style-image: url('../images/arrow.gif');
+#projects {
+	list-style-image   : url('../images/arrow.gif');
 	list-style-position: outside;
-	padding-left: 14px;
-	margin-left: 7px;
+	padding-left       : 14px;
+	/*margin-left: 7px;*/
 	/*background: url('../images/arrow.gif') no-repeat;
 	background-position:left center ;
 	padding-left: 14px;
@@ -91,3 +95,89 @@ img {
 	max-width: 100%;
 }
 
+/*Layout*/
+body{
+	padding: 0 0.8rem;
+}
+nav {
+	margin-top: 3.57rem;
+}
+
+h1 {
+	margin-top: 2rem;
+}
+
+#mainHeader h1 {
+	margin-top: 0;
+}
+.collapse {
+	margin-top: 1rem;
+}
+
+/*work list*/
+#projects li {
+	margin-top: 0.8rem;
+}
+
+#projects li:nth-of-type(1){
+	color: rgb(108, 156, 228);
+}
+
+#gallery {
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.galleryInner{
+	display: inline-block;
+}
+
+form input, textarea {
+	display    : block;
+	font-family: 'Ubuntu';
+	margin-top : 0.5rem;
+	width      : 80%;
+}
+
+form input:nth-of-type(1){
+	margin-top: 0.9rem;
+}
+
+form textarea {
+	display: inline-block;
+	height : 8rem;
+}
+
+[type="submit"]{
+	/*vertical-align: bottom;*/
+	background      : url(../images/menuCover.png) no-repeat center;
+	background-size : contain;
+	color           : white;
+	display         : inline-block;
+	font-size       : 1rem;
+	height          : 5rem;
+	margin-left     : 1rem;
+	width           : 5rem;
+}
+
+/* adress section*/
+#media {
+	width:100%;
+	height: 300px;
+}
+
+.email {
+	float:left;
+}
+
+.adress {
+	clear:left;
+}
+
+.skype {
+	float:right;
+}
+
+.phone {
+	clear:right;
+}

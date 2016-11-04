@@ -53,3 +53,10 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+/*butto type reset*/
+[type="submit"]{
+  background:none;
+  border:none;
+  font-size:1em;
+}
