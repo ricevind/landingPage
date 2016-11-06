@@ -163,7 +163,14 @@ form textarea {
 /* adress section*/
 #media {
 	width:100%;
-	height: 300px;
+	/*height: 300px;*/
+	/*overflow: hidden;*/
+}
+
+#media:after{
+	content: "";
+	clear: both;
+	display: block;
 }
 #media .left {
 	float:left;
@@ -202,4 +209,42 @@ form textarea {
 .phone {
 	background      : url(../images/tel.gif) no-repeat left center;
 	background-size: 3.5rem 3.5rem;
+}
+
+/*technology images*/
+.technology{
+	text-align: center;
+}
+
+.technology img {
+	margin:0.5rem;
+	width: 16%;
+	max-width: 60px;
+}
+
+/* How can i Help section*/
+
+.center {
+	text-align: center;
+}
+
+.help {
+	background-image: url('../images/photo.png');
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 10rem;
+
+	padding:2rem 0 2rem 13rem;
+	text-transform: uppercase;
+	margin-top: 3rem;
+}
+
+/*footer */
+footer{
+	text-align: center;
+	margin-top: 2rem;
+	padding-top: 1rem;
+	margin-left: -100rem;
+	margin-right: -100rem;
+	border-top: 0.1rem solid rgb(192, 192, 194);
 }
