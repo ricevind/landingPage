@@ -16,7 +16,7 @@ html{
 
 h1 {
 	font-family   : 'fghr';
-	font-size     : 4.78rem;
+	font-size     : 4.7rem;
 	text-transform: uppercase;
 }
 
@@ -46,6 +46,14 @@ p, li {
 body {
 	background: url(../images/wzorek.png) rgb(236, 237, 237)  repeat;
 	position: absolute;
+}
+/*animacje*/
+nav {
+	/*transition: all 0.5s ease;*/
+}
+
+.welcome {
+	/*transition: all 0.1s ease;*/
 }
 /*nav styling*/
 
@@ -99,6 +107,8 @@ img {
 /*Layout*/
 body{
 	padding: 0 0.8rem;
+	overflow-x: hidden;
+
 }
 nav {
 	margin-top: 3.57rem;
@@ -245,14 +255,34 @@ footer{
 	text-align: center;
 	margin-top: 2rem;
 	padding-top: 1rem;
-	margin-left: -100rem;
-	margin-right: -100rem;
+	margin-left: -0.8rem;
+	margin-right: -0.8rem;
 	border-top: 0.1rem solid rgb(192, 192, 194);
 }
 /*fixed top nav*/
 .sticky {
+
+	margin-top: 0px;
 	position: fixed;
 	top:0;
-	left: 0;
+	background-color: rgb(192, 192, 194);
+	margin-left: -0.8rem;
+	margin-right: -0.8rem;
+	width: 100%;
 
+}
+
+ .sticky .navLink {
+	background-image: none;
+}
+
+.sticky .mainNav {
+	height:3rem;
+	align-items: center;
+	overflow: hidden;
+	font-size: 1rem;
+}
+
+.sticky .active {
+	background-color: rgb(108, 156, 228);;
 }

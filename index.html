@@ -10,11 +10,12 @@
 
     <link type="text/css" rel="stylesheet" href="css/style.css"></link>
     <script
-  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
-  crossorigin="anonymous">
-  	</script>
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
+	<script src="js/jquery-ui.js"></script>
+
 </head>
 <body>
 	<section id="mainHeader">
@@ -23,15 +24,15 @@
 		<h1 class="blue left">Web</h1>
 		<h1 class="blue left">Developer</h1>
 	</section>
-	<nav class="right sticky">
+	<nav class="right ">
 		<ul class="mainNav">
-				<li class="navLink active"><a href=#><p>Home</p></a></li>
-				<li class="navLink"><a href="#"><p>Work</p></a></li>
-				<li class="navLink"><a href="#"><p>Get in touch</p></a></li>
-				<li class="navLink"><a href="#"><p>Skills</p></a></li>
+				<li class="navLink active"><a href="#mainHeader"><p>Home</p></a></li>
+				<li class="navLink"><a href="#work"><p>Work</p></a></li>
+				<li class="navLink"><a href="#touch"><p>Get in touch</p></a></li>
+				<li class="navLink"><a href="#skills"><p>Skills</p></a></li>
 			</ul>
 	</nav>
-	<section class="right">
+	<section class="right welcome">
 		<h1 class="grey">Welcome</h1>
 		<div class="collapse">
 			<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. </p>
@@ -47,7 +48,7 @@
 			Nulla imperdiet sit amet magna. Vestibulum dapibus, mauris nec malesuada fames ac turpis velit</p>
 		</div>
 	</section>
-	<section class="left">
+	<section class="left" id="work">
 		<h1 class="grey">Work</h1>
 		<div class="collapse">
 			<ul id="projects">
@@ -64,7 +65,7 @@
 			<img src="images/project.jpg" alt="project photo">
 		</div>
 	</section>
-	<section class="left">
+	<section class="left" id="touch">
 		<h1 class="grey ">Get in touch</h1>
 			<div class="collapse">
 				<form action="#" method="post" name="contact">
@@ -99,7 +100,7 @@
 				</div>
 			</div>
 	</section>
-	<section class="right">
+	<section class="right" id="skills">
 		<div class="collapse">
 			<h1 class="grey">Skills</h1>
 			<img src="images/skills.gif">
