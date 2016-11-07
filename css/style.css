@@ -389,6 +389,10 @@ footer{
 		z-index: -9999
 	}
 
+	form {
+		z-index: -9999;
+	}
+
 	#skills {
 		margin-top:5.2rem;
 	}
