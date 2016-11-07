@@ -386,6 +386,7 @@ footer{
 
 	#touch input, textarea{
 		margin-top: 1.9rem;
+		z-index: -9999
 	}
 
 	#skills {
