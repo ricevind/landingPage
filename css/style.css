@@ -145,6 +145,9 @@ h1 {
 .galleryInner{
 	display: inline-block;
 }
+form {
+	position: relative;
+}
 
 form input, textarea {
 	display    : block;
@@ -172,6 +175,9 @@ form textarea {
 	height          : 5rem;
 	margin-left     : 1rem;
 	width           : 5rem;
+	position: absolute;
+	right: 2rem;
+	bottom: -2rem;
 }
 
 /* adress section*/
@@ -228,6 +234,10 @@ form textarea {
 /*technology images*/
 .technology{
 	text-align: center;
+	}
+.technology p{
+	text-align: left;
+	text-transform: uppercase;
 }
 
 .technology img {
@@ -315,5 +325,112 @@ footer{
 		width:140%;
 		margin-right: 0;
 		margin-left: -20%;
+	}
+}
+
+/*media queriesdesktop*/
+@media all and (min-width: 1024px) {
+	html{
+		font-size:0.95vw;
+		width:100%;
+	}
+
+	body {
+		width:80%;
+		margin:0 auto;
+	}
+	nav {
+		margin:2rem 0 0 0;
+	}
+
+	h1 {
+		margin: 0;
+	}
+	.welcome{
+		margin-top:6.95rem;
+	}
+
+	.welcome h1 {
+		margin-top: 0;
+	}
+
+	#gallery {
+		margin-top:7.3rem;
+	}
+
+	.about {
+		margin-top: 7.2rem;
+	}
+
+	.work {
+		clear: right;
+	}
+
+	section p {
+		/*padding:3rem;*/
+	}
+
+	section p:first-child, section ul:first-child {
+		margin-top:3rem;
+	}
+
+	#work {
+		margin-top:5.2rem;
+	}
+
+	#touch {
+		z-index: -9999;
+		clear:both;
+		margin-top:5.2rem;
+	}
+
+	#touch input, textarea{
+		margin-top: 1.9rem;
+	}
+
+	#skills {
+		margin-top:5.2rem;
+	}
+
+	#skills .graph {
+		margin:3rem;
+	}
+
+	.sticky {
+		width:120%;
+		margin-right: 0;
+		margin-left: -20%;
+		z-index: 9999;
+	}
+
+	footer {
+		width:140%;
+		margin-right: 0;
+		margin-left: -20%;
+		clear:both;
+
+	}
+
+	.clear {
+		clear:both;
+		padding-top: 7rem;
+		overflow: hidden;
+		display:flex;
+		align-items:  center;
+		flex-flow: column;
+	}
+
+	.help li {
+		/*width:50%;*/
+	}
+
+	.right {
+		float:right;
+		width:50%;
+	}
+
+	.left {
+		float:left;
+		width:50%;
 	}
 }

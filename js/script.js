@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 $document = $(document);
 var fixedNav = $("nav").clone().insertAfter('nav');
-fixedNav.addClass('sticky nobg').hide();
+fixedNav.addClass('sticky nobg').hide().removeClass('right');
 
 	function navScroll() {
 		var nav = $("nav");
