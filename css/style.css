@@ -277,7 +277,7 @@ footer{
 
 	margin-top: 0px;
 	position: fixed;
-	top:0;
+	bottom:0;
 	background-color: rgb(192, 192, 194);
 	margin-left: -0.8rem;
 	margin-right: -0.8rem;
@@ -379,19 +379,14 @@ footer{
 	}
 
 	#touch {
-		z-index: -9999;
 		clear:both;
 		margin-top:5.2rem;
 	}
 
 	#touch input, textarea{
 		margin-top: 1.9rem;
-		z-index: -9999
 	}
 
-	form {
-		z-index: -9999;
-	}
 
 	#skills {
 		margin-top:5.2rem;
