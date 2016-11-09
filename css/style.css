@@ -282,6 +282,7 @@ footer{
 	margin-left: -0.8rem;
 	margin-right: -0.8rem;
 	width: 100%;
+	z-index: 9999;
 
 }
 
@@ -300,8 +301,15 @@ footer{
 	background-color: rgb(108, 156, 228);
 }
 
+.sticky li:nth-child(3) a.active:after {
+	background-color: rgb(108, 156, 228);
+}
 .nobg a{
 	background-image: none !important;
+}
+
+.slide p:last-of-type {
+	display:none;
 }
 /*media queries tablet*/
 @media all and (min-width: 650px) and (max-width: 1024px) {
@@ -400,8 +408,53 @@ footer{
 		width:120%;
 		margin-right: 0;
 		margin-left: -20%;
-		z-index: 9999;
+
 	}
+
+	.sticky li:last-of-type a{
+		display:none;
+	}
+
+	.sticky li:nth-child(3)	{
+		position: relative;
+}
+	.sticky li:nth-child(3) a:after {
+		content:"/ Skills";
+		font-family: Ubuntu;
+		font-size: 1rem;
+		line-height: 1.1rem;
+		width:100%;
+		text-transform: uppercase;
+		position: absolute;
+		left: 100%;
+		top:0;
+		height:100%;
+		display: flex;
+		align-items: center;
+}
+nav li:nth-child(3)	{
+		position: relative;
+}
+/*nav li:nth-child(3) a:after {
+		content:"  Skills";
+		font-family: Ubuntu;
+		font-size: 1rem;
+		line-height: 1.1rem;
+		width:100%;
+		text-transform: uppercase;
+		position: absolute;
+		left: 100%;
+		top:0;
+		height:100%;
+		display: flex;
+		align-items: center;
+		background     : url(../images/menuCover.png) no-repeat center;
+		background-size: contain;
+}}*/
+nav li:last-of-type a{
+		display:none;
+	}
+
 
 	footer {
 		width:140%;
@@ -433,4 +486,44 @@ footer{
 		float:left;
 		width:50%;
 	}
+	.slide {
+		position: relative;
+		overflow: hidden;
+
+	}
+
+
+
+	@keyframes slideb {
+		0%, 30% {margin-left:0;}
+		30% {margin-left:0;}
+		70% {margin-left:4rem;}
+		70%, 100% {margin-left:4rem;}
+
+	}
+
+	@keyframes slidea {
+		0%, 30% {margin-left:-4rem;}
+		30% {margin-left:-4rem;}
+		70% {margin-left:0rem;}
+		70%, 100% {margin-left:0rem;}
+
+
+	}
+
+	.slide p:first-of-type{
+		animation: slidea 1s alternate infinite linear;
+		position:absolute;
+		display: block;
+		margin-left:-4rem;
+	}
+	 .slide p:last-of-type {
+	position: absolute;
+	display: block;
+	/*margin-right: 4rem;*/
+	margin-left:4rem;
+	animation: slideb 1s alternate infinite linear;
+	}
+
+
 }

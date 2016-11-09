@@ -2,7 +2,8 @@ $(document).ready(function() {
 
 $document = $(document);
 var fixedNav = $("nav").clone().insertAfter('nav');
-fixedNav.addClass('sticky nobg').hide().removeClass('right');
+fixedNav.addClass('sticky nobg').hide().removeClass('right ').find('li').removeClass('slide');
+fixedNav.find('[href="#touch"]').html('<p>Get in touch</p>');
 
 	function navScroll() {
 		var nav = $("nav");
