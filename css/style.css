@@ -283,6 +283,8 @@ footer{
 	margin-right: -0.8rem;
 	width: 100%;
 	z-index: 9999;
+	/*mobile chrome fixed repair*/
+	webkit-transform: translateZ(0);
 
 }
 
