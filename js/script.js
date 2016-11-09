@@ -4,6 +4,10 @@ $document = $(document);
 var fixedNav = $("nav").clone().insertAfter('nav');
 fixedNav.addClass('sticky nobg').hide().removeClass('right ').find('li').removeClass('slide');
 fixedNav.find('[href="#touch"]').html('<p>Get in touch</p>');
+$('html, body').on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function(){
+       $('html, body').stop();
+       fixedNav.stop();
+   }, navScroll);
 
 	function navScroll() {
 		var nav = $("nav");
@@ -19,7 +23,7 @@ fixedNav.find('[href="#touch"]').html('<p>Get in touch</p>');
 			fixedNav.slideUp(slideOptions);
 		}
 	}
-	$document.on("scroll", navScroll);
+	// $document.on("scroll", navScroll);
 	navScroll();
 //
 function elemPosition(selector){
@@ -31,6 +35,6 @@ $('a').click(function(e){
 	$('a').removeClass('active');
 	$("[href='"+id+"']").addClass('active');
 	var position = elemPosition(id);
-	$('html, body').stop().animate({scrollTop:position - $('nav.sticky').outerHeight()}, Math.abs($document.scrollTop()-position), 'easeInOutQuad');
+	$('html, body').stop().animate({scrollTop:position - $('nav.sticky').outerHeight()}, Math.abs($document.scrollTop()-position), 'easeInOutQuad',navScroll);
 	});
 });
