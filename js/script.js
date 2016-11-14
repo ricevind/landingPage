@@ -70,8 +70,8 @@ var xAxis = d3.axisBottom(x).tickSizeOuter(0);
 var yAxis = d3.axisLeft(y).tickSize(0).tickValues('');
 
 var svg = d3.select("#svg").append("svg")
-	.attr("width", width + margin.left + margin.right)
-	.attr("height", height + margin.top + margin.bottom);
+	.attr("viewBox", "0 0 500 300")
+	.attr("preserveAspectRatio", "xMidYMid");
 var g = svg.append("g").attr("transform", "translate(" + 0 + "," + margin.top + ")");
 
 

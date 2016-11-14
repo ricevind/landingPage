@@ -554,3 +554,21 @@ rect{
 rect:nth-child(2n){
 	fill:rgb(185, 209, 245);
 }
+.graph {
+
+}
+#svg {
+     display: block;
+     margin-right: 0 auto;
+     text-align: center;
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*padding-bottom: 100%;*/
+    /*vertical-align: top;*/
+    /*overflow: hidden;*/
+
+}
+
+svg {
+	text-align: center;
+}
