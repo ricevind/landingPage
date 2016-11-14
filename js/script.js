@@ -137,6 +137,14 @@ function once(fn, g){
 
 
 }
+(function() {
+	var aSkills = $('[href="#skills"]');
+	if (aSkills.css('display') === 'none'){
+		$('[href="#touch"]').click(once(animateBar, g));
+	} else {
+		$('[href="#skills"]').click(once(animateBar, g));
 
-$('a').click(once(animateBar, g));
+	}
+})();
+
 });
