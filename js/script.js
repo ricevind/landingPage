@@ -129,22 +129,34 @@ function animateBar(g) {
 }
 
 function once(fn, g){
-
+	var executed = false;
 		return function inner(){
-			fn.bind(null, g)();
-			fn=function(){return null;};
+			if (!executed){
+				fn.bind(null, g)();
+				executed = true;
+			}
+
 		};
 
-
 }
+
+var onceAnimated = once(animateBar, g);
 (function() {
 	var aSkills = $('[href="#skills"]');
 	if (aSkills.css('display') === 'none'){
-		$('[href="#touch"]').click(once(animateBar, g));
+		$('[href="#touch"]').one('click', onceAnimated );
 	} else {
-		$('[href="#skills"]').click(once(animateBar, g));
+		$('[href="#skills"]').one('click', onceAnimated );
+
 
 	}
 })();
 
+$('html, body').on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function(){
+       $('html, body').stop();
+       var skill = elemPosition('#skills');
+       if($document.scrollTop() > skill-200 ){
+         onceAnimated();
+       }
+   }.bind(null, g));
 });
