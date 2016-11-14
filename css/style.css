@@ -529,3 +529,28 @@ nav li:last-of-type a{
 
 
 }
+
+/*SVG graph styling*/
+
+svg .x .tick line {
+	visibility: hidden;
+}
+
+ .axis path {
+	stroke: rgb(192, 192, 194);
+}
+
+.axis line {
+	/*stroke:red;*/
+}
+
+.axis text {
+	/*fill:red;*/
+}
+rect{
+	fill: rgb(192, 192, 194);
+}
+
+rect:nth-child(2n){
+	fill:rgb(185, 209, 245);
+}
